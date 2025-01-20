@@ -51,8 +51,9 @@ El proyecto está en desarrollo activo. Próximas funcionalidades incluyen:
 
 ## 📩 Contacto
 
-Si tienes preguntas o sugerencias, no dudes en contactarme en:<br>
-[E-mail: janover.gonza.sal@gmail.com](#janover.gonza.sal@gmail.com)<br>
+Si tienes preguntas o sugerencias, no dudes en contactarme en:
+
+[E-mail: janover.gonza.sal@gmail.com](#janover.gonza.sal@gmail.com)
 [Teléfono: +51 992 016 075](#+51 992 016 075)
 
 ---

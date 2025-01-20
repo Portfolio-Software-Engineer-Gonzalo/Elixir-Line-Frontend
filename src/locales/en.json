@@ -1,0 +1,14 @@
+{
+  "title-login": "Elixir Line",
+  "sub-title-home": "We make the process flow like a good wine",
+
+  "title-home-option":        "Home",
+  "title-inventory-option":   "Inventory",
+  "title-winemaking-option":  "Winemaking",
+  "title-my-clients-option":  "My Clients",
+  "title-my-orders-option":   "My Orders",
+  "title-my-products-option": "My Products",
+  "title-support-option":     "Support",
+  "sign-in":                  "Sign In",
+  "sign-up":                  "Sign Up"
+}
