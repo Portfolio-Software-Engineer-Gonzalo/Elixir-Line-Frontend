@@ -45,6 +45,7 @@ import SelectButton from "primevue/selectbutton";
 import Tabs from "primevue/tabs";
 import DataView from "primevue/dataview";
 import Panel from "primevue/panel";
+import {Splitter, SplitterPanel} from "primevue";
 
 // Crea la instancia de la aplicación
 const app = createApp(App)
@@ -88,7 +89,9 @@ app.component('pv-button', Button)
     .component('pv-tab-panel', TabPanel)
     .component('pv-data-view', DataView)
     .component('pv-dropdown', Dropdown)
-    .component('pv-panel', Panel);
+    .component('pv-panel', Panel)
+    .component('pv-splitter', Splitter)
+    .component('pv-splitter-panel', SplitterPanel);
 
 // Monta la aplicación
 app.mount('#app')

@@ -4,8 +4,15 @@
 
 ## 🚀 Características principales
 
+- **Interfaz intuitiva y amigable**  
+  Diseño limpio y fácil de usar para una experiencia de usuario fluida.
+
+- **Gestión de camas de viñedos**  
+  Permite registrar y monitorear la ubicación y estado de las camas de viñedos.
+
 - **Gestión del proceso de vinificación**  
   Monitorea y registra cada etapa del proceso de producción:
+    - Recepción de lotes
     - Fermentación
     - Clarificación
     - Prensado
