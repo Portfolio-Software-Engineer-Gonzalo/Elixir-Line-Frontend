@@ -47,11 +47,37 @@ import DataView from "primevue/dataview";
 import Panel from "primevue/panel";
 import {Splitter, SplitterPanel} from "primevue";
 
-// Crea la instancia de la aplicación
-const app = createApp(App)
 
-// Usa Vue i18n
+//===================================================================================
+//     importado de manera local de "router/index.js" creado y ubicado en src
+//===================================================================================
+import router from './router/index.js'
+//===================================================================================
+
+
+
+//=======================================
+// Crea la instancia de la aplicación
+//=======================================
+const app = createApp(App)
+//========================================
+
+
+
+//=================================================================================================
+// Usa Vue i18n para la internacionalización de manera local de "i18n.js" creado y ubicado en src
+//=================================================================================================
 app.use(i18n)
+//=================================================================================================
+
+
+
+//========================= Use Router =========================
+app.use(router);
+//=============================================================
+
+
+
 
 // Usa PrimeVue
 app.use(PrimeVue, {theme: { preset: Aura }, ripple: true })
