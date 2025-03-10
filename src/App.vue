@@ -1,10 +1,10 @@
 <script>
 
-import SingIn from "./elixir-line/security/pages/sing-in.component.vue";
+import SignInComponent from "./elixir-line/security/pages/sign-in.component.vue";
 
 export default {
   name: 'app',
-  components: {SingIn},
+  components: {SingIn: SignInComponent},
   title: 'Elixir Line',
 
  created() {
