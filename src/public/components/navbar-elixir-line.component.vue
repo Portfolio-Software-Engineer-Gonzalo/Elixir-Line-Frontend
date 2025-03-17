@@ -1,6 +1,8 @@
 <script>
+
 export default {
   name: "navbar-elixir-line",
+
 
   data() {
     return {
@@ -33,6 +35,28 @@ export default {
 </script>
 
 <template>
+
+  <div class="navbar-elixir-line w-1/6 flex flex-column items-center justify-center">
+
+    <pv-card class="w-full h-full flex flex-column items-center justify-center">
+
+
+      <template #content>
+        <!-- lista de items como contenido -->
+
+
+
+
+      </template>
+
+      <template #footer>
+
+
+
+      </template>
+    </pv-card>
+
+  </div>
 
 
 </template>

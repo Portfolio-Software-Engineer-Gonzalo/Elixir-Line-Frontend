@@ -13,9 +13,15 @@ export default {
 
 
   methods: {
-    onSingIn(){
+    onSingIn() {
 
-    }
+      // Lógica de autenticación aquí
+      // Si la autenticación es exitosa, redirige a la ruta deseada
+      this.$router.push('/home');
+    },
+
+
+
   }
 
 

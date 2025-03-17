@@ -14,7 +14,8 @@
 
   /*Colores personalizados*/
 
-  --panel-color: #D9D9D9
+  --panel-color: #D9D9D9;
+  --vino-tinto-color: #8B0000;
 }
 
 a {

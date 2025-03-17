@@ -1,10 +1,11 @@
 <script>
 
 import SignInComponent from "./elixir-line/security/pages/sign-in.component.vue";
+import LayoutElixirLine from "./elixir-line/main-content/pages/layout-elixir-line.component.vue";
 
 export default {
   name: 'app',
-  components: {SingIn: SignInComponent},
+  components: {LayoutElixirLine, SingIn: SignInComponent},
   title: 'Elixir Line',
 
  created() {
@@ -17,7 +18,9 @@ export default {
 
 <template>
 
-  <sing-in class="sing-in-container"></sing-in>
+  <div class="flex flex-column flex-grow align-center justify-content-center sing-in-container">
+      <router-view/>
+  </div>
 
 </template>
 

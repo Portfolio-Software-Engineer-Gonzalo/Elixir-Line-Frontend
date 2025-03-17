@@ -1,6 +1,9 @@
 <script>
+import LanguageSwitcher from "./language-switcher.component.vue";
+
 export default {
   name: "toolbar-elixir-line",
+  components: {LanguageSwitcher},
 
   data() {
     return {
@@ -22,15 +25,23 @@ export default {
 
 <template>
 
-  <div class="toolbar-elixir-line">
-    <div class="p-toolbar-group-left">
-      <router-link v-for="item in items" :key="item.label" :to="item.to" class="p-button p-button-text">
-        <i :class="item.icon"></i>
-        <span>{{ $t(item.label) }}</span>
-      </router-link>
-    </div>
 
-  </div>
+  <pv-toolbar class="toolbar-elixir-line m-0  w-full border-none "
+              style="background-color: var(--vino-tinto-color);">
+    <template #center>
+      <div class="brand">
+        <img src="https://www.primefaces.org/primevue/showcase/assets/showcase/images/primelogo.svg" alt="primevue"/>
+      </div>
+    </template>
+
+    <template #end>
+      <div class="language-switcher">
+        <language-switcher/>
+      </div>
+    </template>
+
+  </pv-toolbar>
+
 
 
 </template>
