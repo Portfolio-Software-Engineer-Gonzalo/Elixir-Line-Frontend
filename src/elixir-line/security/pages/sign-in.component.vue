@@ -1,28 +1,37 @@
 <script>
 
+import LayoutElixirLine from "../../main-content/pages/layout-elixir-line.component.vue";
+
 export default {
   name: "sing-in",
+  components: {LayoutElixirLine},
 
   data() {
     return {
       username: '',
       email: '',
-      password: ''
+      password: '',
+      isAuthenticated: false
     };
   },
 
 
   methods: {
-    onSingIn() {
+    onSignIn() {
 
       // Lógica de autenticación aquí
       // Si la autenticación es exitosa, redirige a la ruta deseada
 
-      this.$router.push('/home');
+
+
+      this.$emit("login-success");
+
     },
 
+  },
 
-
+  created() {
+    console.log('Login created');
   }
 
 
@@ -89,7 +98,7 @@ export default {
 
         <!-- 🔑 Formulario de inicio de sesión -->
         <div class="form-sign-in w-full">
-          <form @submit.prevent="onSingIn" class="content-form">
+          <form @submit.prevent="onSignIn" class="content-form">
             <div class="p-fluid">
               <div class="field mt-5">
                 <pv-float-label class="flex flex-column">
@@ -132,6 +141,7 @@ export default {
       </div>
     </div>
   </div>
+
 
 </template>
 

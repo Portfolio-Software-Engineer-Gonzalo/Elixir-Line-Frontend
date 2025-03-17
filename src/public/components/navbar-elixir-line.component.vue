@@ -11,7 +11,7 @@ export default {
       visible: true,
       items: [
         { label: "title-home-option", to: "/vitivinicultor/home",                     icon: 'pi pi-home' },
-        { label: "title-inventory-option", to: "/vitivinicultor/inventory",           icon: 'pi pi-receipt' },
+        { label: "title-inventory-option", to: "/vitivinicultor/supplies",            icon: 'pi pi-receipt' },
         { label: "title-winemaking-option", to: '/vitivinicultor/winemaking-process', icon: 'pi pi-spinner-dotted' },
         { label: "title-my-clients-option", to: '/vitivinicultor/clients',            icon: 'pi pi-user' },
         { label: "title-my-orders-option", to: '/vitivinicultor/orders/history',      icon: 'pi pi-list-check' },
@@ -32,7 +32,7 @@ export default {
 <template>
 
 
-  <div class="navbar-elixir-line flex flex-column flex-1 w-full h-full">
+  <div class="navbar-elixir-line flex flex-column flex-1 w-1/6 h-full">
 
     <!-- Nombre de la empresa -->
     <div

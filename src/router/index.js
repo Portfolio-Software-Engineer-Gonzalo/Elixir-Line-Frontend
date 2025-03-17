@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import PageNotFoundComponent from "../public/pages/page-not-found.component.vue";
 import LayoutElixirLineComponent from "../elixir-line/main-content/pages/layout-elixir-line.component.vue";
-import signInComponent from "../elixir-line/security/pages/sign-in.component.vue";
+import InventoryManagementComponent from "../elixir-line/inventory-management/pages/inventory-management.component.vue";
+import SignInComponent from "../elixir-line/security/pages/sign-in.component.vue";
 
 
 const router = createRouter({
@@ -10,13 +11,13 @@ const router = createRouter({
 
         //ruta por defecto para redirigir a la página de inicio home-elixir line
         {path: '/:pathMatch(.*)*', redirect: '/elixir-line/login'},
-        {path: '/page-not-found',       name: 'PageNotFound',             component: PageNotFoundComponent,            meta: { title: 'Page Not Found' }},
 
+        {path: '/page-not-found',           name: 'PageNotFound',             component: PageNotFoundComponent,            meta: { title: 'Page Not Found' }},
 
-        {path: '/elixir-line/login' , name: 'Login', component: signInComponent, meta: { title: 'Login'}},
+        {path: '/elixir-line/login' ,       name: 'Login', component: SignInComponent, meta: { title: 'Login'}},
 
-
-        {path: '/home', name: 'Home', component: LayoutElixirLineComponent, meta: { title: 'Home'}},
+        {path: '/home',                     name: 'Home', component: LayoutElixirLineComponent, meta: { title: 'Home'}},
+        {path: '/vitivinicultor/supplies',  name: 'Inventory of supplies.', component: InventoryManagementComponent, meta: { title: 'Supplies'}},
 
 
         // Add your routes here as an array of objects with the following properties: path, name, component and meta

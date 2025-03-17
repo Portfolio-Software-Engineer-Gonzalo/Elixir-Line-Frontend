@@ -4,7 +4,17 @@ import NavbarElixirLine from "../../../public/components/navbar-elixir-line.comp
 
 export default {
   name: "layout-elixir-line",
-  components: {NavbarElixirLine, ToolbarElixirLine}
+  components: {NavbarElixirLine, ToolbarElixirLine},
+
+
+
+  created() {
+    //visualización de la página
+    console.log("Layout Elixir Line created");
+    this.$router.push("/vitivinicultor/supplies");
+  }
+
+
 }
 </script>
 
@@ -20,12 +30,12 @@ export default {
 
     <div class="content-container flex flex-row flex-1 w-full h-full">
 
-      <div class="navbar-elixir-line w-1/6 h-full flex flex-column border-top-1 border-white  "
+      <div class="navbar-elixir-line w-1/6 h-full flex flex-column border-top-1 border-white"
            style="background-color: var(--vino-tinto-color);">
         <navbar-elixir-line/>
       </div>
 
-      <main class="view-container">
+      <main class="view-container flex flex-column w-5/6 h-full overflow-auto">
         <router-view/>
       </main>
 
@@ -39,5 +49,11 @@ export default {
 </template>
 
 <style scoped>
+
+.view-container {
+  margin-left: 80px;
+
+}
+
 
 </style>
