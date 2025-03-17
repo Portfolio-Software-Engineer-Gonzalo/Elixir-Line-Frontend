@@ -6,6 +6,7 @@ export default {
 
   data() {
     return {
+      user: null,
       drawer: true,
       visible: true,
       items: [
@@ -33,9 +34,22 @@ export default {
 
   <div class="navbar-elixir-line flex flex-column flex-1 w-full h-full">
 
-      <div class="options flex flex-column flex-1 w-full h-full">
+    <!-- Nombre de la empresa -->
+    <div
+        class="header-navbar flex flex-row text-white align-content-center justify-content-center gap-4 w-full h-20 p-2 border-bottom-1">
+
+      <div>
+        <h1 class="text text-base ">Empresa 1</h1>
+      </div>
+
+      <div>
+        <img src="../../assets/login.png" width="50" alt="Company logo"/></div>
+    </div>
+
+    <!--Barra de navegación-->
+      <div class="options flex flex-column flex-1 w-full h-full p-4">
         <router-link v-for="item in items" :key="item.label" :to="item.to">
-          <pv-button @click="visible = false" class="button-option m-1" >
+          <pv-button @click="visible = false" class="button-option m-1 " >
             <i :class="item.icon"></i>
             {{ $t(item.label) }}
           </pv-button>
@@ -69,7 +83,7 @@ export default {
   border: none;
   border-radius: 0;
   padding: 10px;
-  width: 220px;
+  width: 210px;
   align-items: start;
   justify-content: start;
   border-bottom: solid 1px #F5F5DC;

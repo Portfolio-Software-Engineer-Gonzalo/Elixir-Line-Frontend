@@ -17,6 +17,7 @@ export default {
 
       // Lógica de autenticación aquí
       // Si la autenticación es exitosa, redirige a la ruta deseada
+
       this.$router.push('/home');
     },
 
@@ -31,10 +32,10 @@ export default {
 
 <template>
 
-  <div class="flex flex-row justify-center flex-1" >
+  <div class="flex flex-row justify-center flex-1 overflow-hidden" >
 
     <!--  ======================================= Panel 1 ======================================= -->
-    <div class="contenido-panel-1 w-full h-full flex justify-center flex-1 overflow-hidden"
+    <div class="contenido-panel-1 w-full h-full flex justify-center flex-1"
          style="background-color: var(--panel-color);" >
 
       <div class="flex flex-column items-center justify-center gap-1 flex-1 w-full h-full">
@@ -73,8 +74,7 @@ export default {
     <!--  ======================================= Panel 2 ======================================= -->
     <div class="contenido-panel-2 w-full h-full flex justify-center flex-1">
 
-      <div
-          class="card-login flex flex-column w-full h-full sm:w-96 md:w-[500px] lg:w-[600px] xl:w-[700px] bg-white p-8 justify-content-center">
+      <div class="card-login flex flex-column w-full h-full sm:w-96 md:w-[500px] lg:w-[600px] xl:w-[700px] bg-white p-8 justify-content-center">
 
         <!-- 🔙 Botón de regresar -->
         <div class="flex justify-center">
