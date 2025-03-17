@@ -7,7 +7,7 @@ export default {
   data() {
     return {
       drawer: true,
-      visible: false,
+      visible: true,
       items: [
         { label: "title-home-option", to: "/vitivinicultor/home",                     icon: 'pi pi-home' },
         { label: "title-inventory-option", to: "/vitivinicultor/inventory",           icon: 'pi pi-receipt' },
@@ -20,15 +20,9 @@ export default {
     }
   },
 
-  methods: {
-    closeDrawer() {
-      this.visible = false;
-    }
-  },
-
 
   created() {
-    console.log('HeaderContent created');
+    console.log('Navbar created');
   }
 
 }
@@ -36,31 +30,59 @@ export default {
 
 <template>
 
-  <div class="navbar-elixir-line w-1/6 flex flex-column items-center justify-center">
 
-    <pv-card class="w-full h-full flex flex-column items-center justify-center">
+  <div class="navbar-elixir-line flex flex-column flex-1 w-full h-full">
 
+      <div class="options flex flex-column flex-1 w-full h-full">
+        <router-link v-for="item in items" :key="item.label" :to="item.to">
+          <pv-button @click="visible = false" class="button-option m-1" >
+            <i :class="item.icon"></i>
+            {{ $t(item.label) }}
+          </pv-button>
+        </router-link>
+      </div>
 
-      <template #content>
-        <!-- lista de items como contenido -->
-
-
-
-
-      </template>
-
-      <template #footer>
-
-
-
-      </template>
-    </pv-card>
+    <!--Derechos reservados-->
+    <div class="footer-navbar">
+      <p class="text text-xs text-center text-white ">&copy; 2025 Elixir Line. Derechos Reservados</p>
+      <p class="text text-xs text-center text-white"> Janover Gonzalo Saldaña Vela</p>
+    </div>
 
   </div>
-
 
 </template>
 
 <style scoped>
+
+
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.options .button-option {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  width: 220px;
+  align-items: start;
+  justify-content: start;
+  border-bottom: solid 1px #F5F5DC;
+
+}
+
+.options .button-option:not(:disabled):hover {
+  background: #F5F5DC;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+
 
 </style>

@@ -20,15 +20,13 @@ export default {
 
     <div class="content-container flex flex-row flex-1 w-full h-full">
 
-      <div class="navbar-elixir-line w-1/6"
+      <div class="navbar-elixir-line w-1/6 h-full flex flex-column border-top-1 border-white  "
            style="background-color: var(--vino-tinto-color);">
         <navbar-elixir-line/>
       </div>
 
-
       <main class="view-container">
-
-
+        <router-view/>
       </main>
 
     </div>
