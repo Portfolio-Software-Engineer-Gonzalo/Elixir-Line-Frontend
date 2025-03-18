@@ -35,7 +35,7 @@ export default {
         <navbar-elixir-line/>
       </div>
 
-      <main class="view-container flex flex-column w-5/6 h-full overflow-auto">
+      <main class="view-container flex flex-column flex-1 w-5/6 h-full overflow-auto">
         <router-view/>
       </main>
 

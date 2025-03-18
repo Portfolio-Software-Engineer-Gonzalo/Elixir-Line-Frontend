@@ -22,10 +22,9 @@ export default {
       // Lógica de autenticación aquí
       // Si la autenticación es exitosa, redirige a la ruta deseada
 
-
-
-      this.$emit("login-success");
-
+      this.isAuthenticated = true;
+      this.$router.push("/home");
+      console.log('Autenticación exitosa');
     },
 
   },
@@ -140,7 +139,11 @@ export default {
 
       </div>
     </div>
+
+
   </div>
+
+
 
 
 </template>

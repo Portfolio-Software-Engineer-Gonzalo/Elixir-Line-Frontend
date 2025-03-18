@@ -16,8 +16,18 @@ const router = createRouter({
 
         {path: '/elixir-line/login' ,       name: 'Login', component: SignInComponent, meta: { title: 'Login'}},
 
-        {path: '/home',                     name: 'Home', component: LayoutElixirLineComponent, meta: { title: 'Home'}},
-        {path: '/vitivinicultor/supplies',  name: 'Inventory of supplies.', component: InventoryManagementComponent, meta: { title: 'Supplies'}},
+
+        {
+            path: '/home', component: LayoutElixirLineComponent,
+            children:[
+                {path: '/vitivinicultor/supplies',  name: 'Inventory of supplies.', component: InventoryManagementComponent, meta: { title: 'Supplies'}},
+
+            ],meta: { title: 'Home'},
+
+        },
+
+
+
 
 
         // Add your routes here as an array of objects with the following properties: path, name, component and meta

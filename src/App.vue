@@ -8,17 +8,6 @@ export default {
   components: {LayoutElixirLine, SingIn: SignInComponent},
   title: 'Elixir Line',
 
-  data() {
-    return {
-      isAuthenticated: false
-    };
-  },
-
-  methods: {
-    onLoginSuccess() {
-      this.isAuthenticated = true;
-    }
-  },
 
  created() {
     console.log('App created');
@@ -30,17 +19,9 @@ export default {
 
 <template>
 
-  <div id="app">
-    <div v-if="!isAuthenticated"  class="flex flex-column flex-grow-1 sing-in-container">
-      <sing-in @login-success="onLoginSuccess"/>
-    </div>
-
-    <div v-if="isAuthenticated"  class="flex flex-column flex-1 flex-grow-1 sing-in-container">
-      <layout-elixir-line class="flex flex-1"/>
-    </div>
-
+  <div class="sing-in-container flex flex-1 flex-row justify-center items-center">
+    <router-view/>
   </div>
-
 
 </template>
 
