@@ -1,8 +1,8 @@
 {
   "customers": [
     {
-      "id": 1,
-      "person_name": "Juan Pérez",
+      "id": "1",
+      "person_name": "Alonso Pérez",
       "dni": "12345678",
       "email": "juan.perez@example.com",
       "business_name": "Bodega Los Andes",
@@ -13,7 +13,7 @@
       "ruc": "20123456789"
     },
     {
-      "id": 2,
+      "id": "2",
       "person_name": "María Gómez",
       "dni": "23456789",
       "email": "maria.gomez@example.com",
@@ -25,7 +25,7 @@
       "ruc": "20234567890"
     },
     {
-      "id": 3,
+      "id": "3",
       "person_name": "Carlos Ramírez",
       "dni": "34567890",
       "email": "carlos.ramirez@example.com",
@@ -37,7 +37,7 @@
       "ruc": "20345678901"
     },
     {
-      "id": 4,
+      "id": "4",
       "person_name": "Ana Torres",
       "dni": "45678901",
       "email": "ana.torres@example.com",
@@ -49,7 +49,7 @@
       "ruc": "20456789012"
     },
     {
-      "id": 5,
+      "id": "5",
       "person_name": "Luis Fernández",
       "dni": "56789012",
       "email": "luis.fernandez@example.com",
@@ -61,7 +61,7 @@
       "ruc": "20567890123"
     },
     {
-      "id": 6,
+      "id": "6",
       "person_name": "Paula Ríos",
       "dni": "67890123",
       "email": "paula.rios@example.com",
@@ -73,7 +73,7 @@
       "ruc": "20678901234"
     },
     {
-      "id": 7,
+      "id": "7",
       "person_name": "Fernando López",
       "dni": "78901234",
       "email": "fernando.lopez@example.com",
@@ -85,7 +85,7 @@
       "ruc": "20789012345"
     },
     {
-      "id": 8,
+      "id": "8",
       "person_name": "Gabriela Castro",
       "dni": "89012345",
       "email": "gabriela.castro@example.com",
@@ -97,7 +97,7 @@
       "ruc": "20890123456"
     },
     {
-      "id": 9,
+      "id": "9",
       "person_name": "Ricardo Méndez",
       "dni": "90123456",
       "email": "ricardo.mendez@example.com",
@@ -109,7 +109,7 @@
       "ruc": "20901234567"
     },
     {
-      "id": 10,
+      "id": "10",
       "person_name": "Carmen Salazar",
       "dni": "12345067",
       "email": "carmen.salazar@example.com",
@@ -121,7 +121,7 @@
       "ruc": "21012345678"
     },
     {
-      "id": 11,
+      "id": "11",
       "person_name": "Javier Vargas",
       "dni": "23456078",
       "email": "javier.vargas@example.com",
@@ -133,7 +133,7 @@
       "ruc": "21123456789"
     },
     {
-      "id": 12,
+      "id": "12",
       "person_name": "Lorena Martínez",
       "dni": "34567089",
       "email": "lorena.martinez@example.com",
@@ -145,7 +145,7 @@
       "ruc": "21234567890"
     },
     {
-      "id": 13,
+      "id": "13",
       "person_name": "Oscar Díaz",
       "dni": "45678090",
       "email": "oscar.diaz@example.com",
@@ -157,7 +157,7 @@
       "ruc": "21345678901"
     },
     {
-      "id": 14,
+      "id": "14",
       "person_name": "Andrea Fuentes",
       "dni": "56789001",
       "email": "andrea.fuentes@example.com",
@@ -169,7 +169,7 @@
       "ruc": "21456789012"
     },
     {
-      "id": 15,
+      "id": "15",
       "person_name": "Manuel Reyes",
       "dni": "67890012",
       "email": "manuel.reyes@example.com",
@@ -181,19 +181,19 @@
       "ruc": "21567890123"
     },
     {
-      "id": 16,
+      "id": "16",
       "person_name": "Sofía Sánchez",
       "dni": "78900123",
       "email": "sofia.sanchez@example.com",
-        "business_name": "Bodega La Cava",
-        "phone": "+51 987654336",
-        "address": "Jr. Los Viñedos 45",
-        "country": "Perú",
-        "city": "Ica",
-        "ruc": "21678901234"
+      "business_name": "Bodega La Cava",
+      "phone": "+51 987654336",
+      "address": "Jr. Los Viñedos 45",
+      "country": "Perú",
+      "city": "Ica",
+      "ruc": "21678901234"
     },
     {
-      "id": 17,
+      "id": "17",
       "person_name": "Martín Gutiérrez",
       "dni": "89001234",
       "email": "matin.gutierrez@example.com",
@@ -205,7 +205,7 @@
       "ruc": "21789012345"
     },
     {
-      "id": 18,
+      "id": "18",
       "person_name": "Laura Paredes",
       "dni": "90123456",
       "email": "laura.paredes@example.com",
@@ -217,7 +217,7 @@
       "ruc": "21890123456"
     },
     {
-      "id": 19,
+      "id": "19",
       "person_name": "Pedro Mendoza",
       "dni": "12345678",
       "email": "pedro.mendoza@example.com",
