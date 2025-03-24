@@ -45,7 +45,7 @@ import SelectButton from "primevue/selectbutton";
 import Tabs from "primevue/tabs";
 import DataView from "primevue/dataview";
 import Panel from "primevue/panel";
-import {Splitter, SplitterPanel} from "primevue";
+import {Paginator, Splitter, SplitterPanel} from "primevue";
 
 
 //===================================================================================
@@ -117,7 +117,8 @@ app.component('pv-button', Button)
     .component('pv-dropdown', Dropdown)
     .component('pv-panel', Panel)
     .component('pv-splitter', Splitter)
-    .component('pv-splitter-panel', SplitterPanel);
+    .component('pv-splitter-panel', SplitterPanel)
+    .component('pv-paginator', Paginator);
 
 // Monta la aplicación
 app.mount('#app')

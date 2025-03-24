@@ -1,5 +1,6 @@
 
 export class Customer {
+
     constructor(
         {
             id = 0,
@@ -11,7 +12,9 @@ export class Customer {
             address = '',
             country = '',
             city = '',
-            ruc = ''
+            ruc = '',
+            registration_date = '',
+            customer_type = ''
         }
     )
     {
@@ -25,5 +28,7 @@ export class Customer {
         this.country = country;
         this.city = city;
         this.ruc = ruc;
+        this.registration_date = registration_date;
+        this.customer_type = customer_type;
     }
 }

@@ -2,22 +2,20 @@
 import {FilterMatchMode} from "@primevue/core";
 
 export default {
-  name: "data-manager",
+  name: "card-manager",
 
   inheritAttrs: false,
 
   props: {
     items: { type: Array, required: true },
     title: { type: { singular: '', plural: ''}, required: true },
-    dynamic: { type: Boolean, default: false },
-    columns: { type: Array, default: () => []}
+    image: { type: String, default: null },
   },
 
   data() {
     return {
       selectedItems: [],
       filters: null,
-      rows: 4 // Default number of rows
     }
   },
 
@@ -79,9 +77,9 @@ export default {
 
 
   created() {
-    this.initFilters();
-  }
+    console.log('Card Manager created');
 
+  }
 }
 </script>
 
@@ -91,13 +89,11 @@ export default {
   <pv-toast/>
   <pv-confirm-dialog/>
 
-
   <div class="flex flex-column flex-1 w-full h-full overflow-hidden">
 
     <!-- ===================================== Title section ===================================== -->
-    <h2>{{ title.plural }} Management</h2>
+    <h2>Manage {{ title.plural }}</h2>
     <!-- ========================================================================================= -->
-
 
     <!-- ===================================== Toolbar section ===================================== -->
     <pv-toolbar>
@@ -106,51 +102,44 @@ export default {
         <pv-button :disabled="!selectedItems || !selectedItems.length" icon="pi pi-trash" label="Delete" severity="danger"
                    @click="confirmDeleteSelected"/>
       </template>
-
-      <template #end>
-        <pv-button icon="pi pi-download" label="Export" severity="help" @click="exportToCsv($event)"/>
-      </template>
     </pv-toolbar>
     <!-- ========================================================================================= -->
 
+    <div class="card-container flex flex-column flex-1 overflow-scroll" >
+
+      <div class="flex flex-wrap justify-content-center gap-4 w-full">
+
+        <pv-card>
+
+          <!-- Imagen opcional -->
+          <template #header v-if="image">
+            <img :src="image" alt="Card Image" class="w-full h-40 object-cover rounded-t-lg">
+          </template>
+
+          <!-- Título dinámico -->
+          <template #title>
+            <h3 class="text-lg font-bold text-gray-900">{{ title }}</h3>
+          </template>
+
+          <!-- Contenido personalizado con slot -->
+          <template #content>
+            <slot name="content-card"></slot>
+          </template>
 
 
-    <!-- ===================================== Data table section ===================================== -->
-    <div class="data-table-container flex flex-column flex-1 overflow-auto">
-      <pv-data-table
-          ref="dt"
-          v-model:selection="selectedItems"
-          :filters="filters"
-          :paginator="true"
-          :rows="rows"
-          :rows-per-page-options="[5, 10, 15, 20]"
-          :value="items"
-          current-page-report-template="Showing {first} to {last} of {totalRecords} ${{title.plural}}"
-          data-key="id"
-          paginator-template="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-          class="w-full h-full"
-          scrollable
-          scrollHeight="flex"
-          style="table-layout: fixed;" >
-
-
-        <pv-column :exportable="false" selection-mode="multiple" style="width: 3em" />
-
-        <slot name="custom-columns-manager"></slot>
-
-        <pv-column :exportable="false" style="min-width: 8rem; max-width: 10rem; white-space: nowrap;">
-          <template #body="slotProps">
+          <template #footer="slotProps">
             <pv-button icon="pi pi-pencil" outlined rounded class="mr-2" @click="editItem(slotProps.data)" />
             <pv-button icon="pi pi-trash" outlined rounded severity="danger" @click="confirmDeleteItem(slotProps.data)" />
           </template>
-        </pv-column>
 
-      </pv-data-table>
+        </pv-card>
+      </div>
+
     </div>
-    <!-- ========================================================================================= -->
-
 
   </div>
+
+
 
 
 </template>

@@ -10,7 +10,7 @@ export default {
 
   data() {
     return {
-      title: {singular: 'Customer', plural: 'Customers'},
+      title: {singular: 'Customer', plural: 'Customer'},
       itemsArray: [],
 
       item: new Customer({}),
@@ -166,18 +166,21 @@ export default {
                       v-on:delete-item-requested-shared-manager="onDeleteItem($event)"
                       v-on:delete-selected-items-requested-shared-manager="onDeleteSelectedItems($event)">
 
-          <template #custom-columns-manager class="flex flex-row flex-wrap gap-2 w-full p-2" >
+          <template #custom-columns-manager>
+
             <pv-column :sortable="true" field="person_name" header="Person Name" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="dni" header="DNI" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="email" header="Email" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="business_name" header="Business Name" style="min-width: 8rem"/>
+            <pv-column :sortable="true" field="customer_type" header="Customer Type" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="phone" header="Phone" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="address" header="Address" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="country" header="Country" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="city" header="City" style="min-width: 8rem"/>
             <pv-column :sortable="true" field="ruc" header="RUC" style="min-width: 8rem"/>
-          </template>
+            <pv-column :sortable="true" field="registration_date" header="Registration Date" style="min-width: 8rem"/>
 
+          </template>
         </data-manager>
 
 
