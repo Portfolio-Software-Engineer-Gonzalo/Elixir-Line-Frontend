@@ -3,6 +3,7 @@ import PageNotFoundComponent from "../public/pages/page-not-found.component.vue"
 import LayoutElixirLineComponent from "../public/pages/layout-elixir-line.component.vue";
 import InventoryManagementComponent from "../elixir-line/inventory-management/pages/inventory-management.component.vue";
 import SignInComponent from "../elixir-line/security/pages/sign-in.component.vue";
+import CustomerManagementComponent from "../elixir-line/customer-management/pages/customer-management.component.vue";
 
 
 const router = createRouter({
@@ -20,7 +21,8 @@ const router = createRouter({
         {
             path: '/home', component: LayoutElixirLineComponent,
             children:[
-                {path: '/vitivinicultor/supplies',  name: 'Inventory of supplies.', component: InventoryManagementComponent, meta: { title: 'Supplies'}},
+                {path: '/vitivinicultor/supplies',      name: 'Inventory of supplies.', component: InventoryManagementComponent,    meta: { title: 'Supplies'}},
+                {path: '/vitivinicultor/customers' ,    name: 'Customers',              component: CustomerManagementComponent,     meta: { title: 'Customers'}},
 
             ],meta: { title: 'Home'},
 

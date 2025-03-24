@@ -20,7 +20,7 @@ export default {
 
 <template>
 
-  <div class="home-elixir-line flex flex-column flex-1 w-full h-full">
+  <div class="home-elixir-line flex flex-column flex-1 w-full h-screen overflow-hidden">
 
     <div class="toolbar-elixir-line w-full"
          style="background-color: var(--vino-tinto-color);" >
@@ -28,16 +28,16 @@ export default {
     </div>
 
 
-    <div class="content-container flex flex-row flex-1 w-full h-full">
+    <div class="content-container flex flex-row flex-1 w-full h-full overflow-hidden">
 
       <div class="navbar-elixir-line w-1/6 h-full flex flex-column border-top-1 border-white"
            style="background-color: var(--vino-tinto-color);">
         <navbar-elixir-line/>
       </div>
 
-      <main class="view-container flex flex-column flex-1 w-5/6 h-full overflow-auto">
-        <router-view/>
-      </main>
+      <div class="view-container flex-column flex-1 w-full overflow-hidden">
+          <router-view/>
+      </div>
 
     </div>
 
@@ -50,10 +50,6 @@ export default {
 
 <style scoped>
 
-.view-container {
-  margin-left: 80px;
-
-}
 
 
 </style>
