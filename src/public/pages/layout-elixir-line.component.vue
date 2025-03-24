@@ -1,6 +1,6 @@
 <script>
-import ToolbarElixirLine from "../../../public/components/toolbar-elixir-line.component.vue";
-import NavbarElixirLine from "../../../public/components/navbar-elixir-line.component.vue";
+import ToolbarElixirLine from "../components/toolbar-elixir-line.component.vue";
+import NavbarElixirLine from "../components/navbar-elixir-line.component.vue";
 
 export default {
   name: "layout-elixir-line",

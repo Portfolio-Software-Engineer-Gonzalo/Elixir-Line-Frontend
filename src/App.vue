@@ -1,7 +1,7 @@
 <script>
 
 import SignInComponent from "./elixir-line/security/pages/sign-in.component.vue";
-import LayoutElixirLine from "./elixir-line/main-content/pages/layout-elixir-line.component.vue";
+import LayoutElixirLine from "./public/pages/layout-elixir-line.component.vue";
 
 export default {
   name: 'app',

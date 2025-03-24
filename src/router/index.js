@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import PageNotFoundComponent from "../public/pages/page-not-found.component.vue";
-import LayoutElixirLineComponent from "../elixir-line/main-content/pages/layout-elixir-line.component.vue";
+import LayoutElixirLineComponent from "../public/pages/layout-elixir-line.component.vue";
 import InventoryManagementComponent from "../elixir-line/inventory-management/pages/inventory-management.component.vue";
 import SignInComponent from "../elixir-line/security/pages/sign-in.component.vue";
 

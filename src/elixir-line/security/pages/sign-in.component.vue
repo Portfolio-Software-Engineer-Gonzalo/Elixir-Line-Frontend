@@ -1,6 +1,6 @@
 <script>
 
-import LayoutElixirLine from "../../main-content/pages/layout-elixir-line.component.vue";
+import LayoutElixirLine from "../../../public/pages/layout-elixir-line.component.vue";
 
 export default {
   name: "sing-in",
