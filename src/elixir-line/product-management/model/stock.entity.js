@@ -23,12 +23,12 @@ export default class Stock {
         this.movements = movements;
     }
 
-    //Método para actualizar el total disponible de stock
+    //Metodo para actualizar el total disponible de stock
     updateTotalAvailable(amount) {
         this.total_available += amount;
     }
 
-    //Método para reservar stock disponible
+    //Metodo para reservar stock disponible
     reserveStock(amount) {
         if (this.total_available - this.reserved >= amount) {
             this.reserved += amount;
@@ -39,7 +39,7 @@ export default class Stock {
         }
     }
 
-    //Método para liberar stock reservado
+    //Metodo para liberar stock reservado
     releaseReservedStock(amount) {
         if (this.reserved >= amount) {
             this.reserved -= amount;
@@ -50,17 +50,17 @@ export default class Stock {
         }
     }
 
-    //Método para registrar un movimiento de stock (entrada o salida)
+    //Metodo para registrar un movimiento de stock (entrada o salida)
     addMovement(date, type, quantity) {
         this.movements.push({ date, type, quantity });
     }
 
-    //Método para agregar nuevas ubicaciones de almacén y su stock
+    //Metodo para agregar nuevas ubicaciones de almacén y su stock
     addLocation(warehouse, quantity) {
         this.locations.push({ warehouse, quantity });
     }
 
-    //Método para obtener el stock en una ubicación específica (almacén)
+    //Metodo para obtener el stock en una ubicación específica (almacén)
     getStockAtLocation(warehouse) {
         const location = this.locations.find(loc => loc.warehouse === warehouse);
         return location ? location.quantity : 0;
