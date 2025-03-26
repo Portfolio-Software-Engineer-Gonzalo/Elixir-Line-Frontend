@@ -9,6 +9,7 @@ export default class Product {
             year = '',
             wine_type = '',
             batch_number = '',
+            price = '',
             photo_url = '',
             quality_data_id = '',
             production_process_id = '',
@@ -23,6 +24,7 @@ export default class Product {
         this.year = year;
         this.wine_type = wine_type;
         this.batch_number = batch_number;
+        this.price = price;
         this.photo_url = photo_url;
         this.quality_data_id = quality_data_id;
         this.production_process_id = production_process_id;

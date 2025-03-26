@@ -205,7 +205,8 @@
     "year": "2020",
     "wine_type": "Tinto",
     "batch_number": "BATCH-001",
-    "photo_url": "https://example.com/cabernet.jpg",
+    "price": 100,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q001",
     "production_process_id": "P001",
     "stock_id": "S001",
@@ -218,7 +219,8 @@
     "year": "2021",
     "wine_type": "Blanco",
     "batch_number": "BATCH-002",
-    "photo_url": "https://example.com/chardonnay.jpg",
+    "price": 120,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q002",
     "production_process_id": "P002",
     "stock_id": "S002",
@@ -231,7 +233,8 @@
     "year": "2019",
     "wine_type": "Tinto",
     "batch_number": "BATCH-003",
-    "photo_url": "https://example.com/malbec.jpg",
+    "price": 150,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q003",
     "production_process_id": "P003",
     "stock_id": "S003",
@@ -244,7 +247,8 @@
     "year": "2020",
     "wine_type": "Tinto",
     "batch_number": "BATCH-004",
-    "photo_url": "https://example.com/merlot.jpg",
+    "price": 90,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q004",
     "production_process_id": "P004",
     "stock_id": "S004",
@@ -257,7 +261,8 @@
     "year": "2021",
     "wine_type": "Blanco",
     "batch_number": "BATCH-005",
-    "photo_url": "https://example.com/sauvignon.jpg",
+    "price": 110,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q005",
     "production_process_id": "P005",
     "stock_id": "S005",
@@ -270,7 +275,8 @@
     "year": "2018",
     "wine_type": "Tinto",
     "batch_number": "BATCH-006",
-    "photo_url": "https://example.com/syrah.jpg",
+    "price": 130,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q006",
     "production_process_id": "P006",
     "stock_id": "S006",
@@ -283,7 +289,8 @@
     "year": "2020",
     "wine_type": "Tinto",
     "batch_number": "BATCH-007",
-    "photo_url": "https://example.com/pinotnoir.jpg",
+    "price": 140,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q007",
     "production_process_id": "P007",
     "stock_id": "S007",
@@ -296,7 +303,8 @@
     "year": "2019",
     "wine_type": "Tinto",
     "batch_number": "BATCH-008",
-    "photo_url": "https://example.com/tempranillo.jpg",
+    "price" : 160,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q008",
     "production_process_id": "P008",
     "stock_id": "S008",
@@ -309,7 +317,8 @@
     "year": "2022",
     "wine_type": "Tinto",
     "batch_number": "BATCH-009",
-    "photo_url": "https://example.com/zinfandel.jpg",
+    "price": 170,
+    "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q009",
     "production_process_id": "P009",
     "stock_id": "S009",
@@ -322,12 +331,164 @@
     "year": "2021",
     "wine_type": "Blanco",
     "batch_number": "BATCH-010",
+    "price": 180,
     "photo_url": "https://tabernero.vteximg.com.br/arquivos/ids/155554-1000-1000/9010005529_1.jpg?v=637278351650530000",
     "quality_data_id": "Q010",
     "production_process_id": "P010",
     "stock_id": "S010",
     "distribution_id": "D010"
   }
-]
-
+],
+  "stocks": [
+    {
+      "id": "S001",
+      "product_id": "1",
+      "total_available": 2500,
+      "reserved": 800,
+      "in_transit": 300,
+      "locations": [
+        { "warehouse": "Lima Warehouse", "quantity": 1500 },
+        { "warehouse": "Cusco Storage", "quantity": 1000 }
+      ],
+      "movements": [
+        { "date": "05/01/24", "type": "Entrada", "quantity": 500 },
+        { "date": "10/01/24", "type": "Salida", "quantity": 200 }
+      ]
+    },
+    {
+      "id": "S002",
+      "product_id": "2",
+      "total_available": 1800,
+      "reserved": 500,
+      "in_transit": 200,
+      "locations": [
+        { "warehouse": "Arequipa Storage", "quantity": 1200 },
+        { "warehouse": "Lima Warehouse", "quantity": 600 }
+      ],
+      "movements": [
+        { "date": "03/01/24", "type": "Entrada", "quantity": 400 },
+        { "date": "12/01/24", "type": "Salida", "quantity": 100 }
+      ]
+    },
+    {
+      "id": "S003",
+      "product_id": "3",
+      "total_available": 3000,
+      "reserved": 900,
+      "in_transit": 400,
+      "locations": [
+        { "warehouse": "Lima Warehouse", "quantity": 2000 },
+        { "warehouse": "Cusco Storage", "quantity": 1000 }
+      ],
+      "movements": [
+        { "date": "06/01/24", "type": "Entrada", "quantity": 600 },
+        { "date": "15/01/24", "type": "Salida", "quantity": 300 }
+      ]
+    },
+    {
+      "id": "S004",
+      "product_id": "4",
+      "total_available": 2300,
+      "reserved": 700,
+      "in_transit": 150,
+      "locations": [
+        { "warehouse": "Arequipa Storage", "quantity": 1300 },
+        { "warehouse": "Lima Warehouse", "quantity": 1000 }
+      ],
+      "movements": [
+        { "date": "02/01/24", "type": "Entrada", "quantity": 350 },
+        { "date": "11/01/24", "type": "Salida", "quantity": 150 }
+      ]
+    },
+    {
+      "id": "S005",
+      "product_id": "5",
+      "total_available": 2200,
+      "reserved": 600,
+      "in_transit": 250,
+      "locations": [
+        { "warehouse": "Cusco Storage", "quantity": 1500 },
+        { "warehouse": "Lima Warehouse", "quantity": 700 }
+      ],
+      "movements": [
+        { "date": "08/01/24", "type": "Entrada", "quantity": 500 },
+        { "date": "14/01/24", "type": "Salida", "quantity": 200 }
+      ]
+    },
+    {
+      "id": "S006",
+      "product_id": "6",
+      "total_available": 2100,
+      "reserved": 650,
+      "in_transit": 300,
+      "locations": [
+        { "warehouse": "Arequipa Storage", "quantity": 1000 },
+        { "warehouse": "Lima Warehouse", "quantity": 1100 }
+      ],
+      "movements": [
+        { "date": "01/01/24", "type": "Entrada", "quantity": 400 },
+        { "date": "09/01/24", "type": "Salida", "quantity": 150 }
+      ]
+    },
+    {
+      "id": "S007",
+      "product_id": "7",
+      "total_available": 2400,
+      "reserved": 800,
+      "in_transit": 350,
+      "locations": [
+        { "warehouse": "Lima Warehouse", "quantity": 1500 },
+        { "warehouse": "Cusco Storage", "quantity": 900 }
+      ],
+      "movements": [
+        { "date": "07/01/24", "type": "Entrada", "quantity": 400 },
+        { "date": "13/01/24", "type": "Salida", "quantity": 200 }
+      ]
+    },
+    {
+      "id": "S008",
+      "product_id": "8",
+      "total_available": 2800,
+      "reserved": 750,
+      "in_transit": 400,
+      "locations": [
+        { "warehouse": "Cusco Storage", "quantity": 1700 },
+        { "warehouse": "Lima Warehouse", "quantity": 1100 }
+      ],
+      "movements": [
+        { "date": "10/01/24", "type": "Entrada", "quantity": 500 },
+        { "date": "14/01/24", "type": "Salida", "quantity": 200 }
+      ]
+    },
+    {
+      "id": "S009",
+      "product_id": "9",
+      "total_available": 2600,
+      "reserved": 650,
+      "in_transit": 300,
+      "locations": [
+        { "warehouse": "Lima Warehouse", "quantity": 1800 },
+        { "warehouse": "Arequipa Storage", "quantity": 800 }
+      ],
+      "movements": [
+        { "date": "04/01/24", "type": "Entrada", "quantity": 450 },
+        { "date": "11/01/24", "type": "Salida", "quantity": 100 }
+      ]
+    },
+    {
+      "id": "S010",
+      "product_id": "10",
+      "total_available": 2700,
+      "reserved": 800,
+      "in_transit": 250,
+      "locations": [
+        { "warehouse": "Cusco Storage", "quantity": 1600 },
+        { "warehouse": "Lima Warehouse", "quantity": 1100 }
+      ],
+      "movements": [
+        { "date": "05/01/24", "type": "Entrada", "quantity": 500 },
+        { "date": "13/01/24", "type": "Salida", "quantity": 200 }
+      ]
+    }
+  ]
 }
